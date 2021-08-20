@@ -14,6 +14,9 @@ library(palmerpenguins)
 ```{r}
 ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) +
   geom_jitter(aes(color = species)) +
-  theme_classic()
+  theme_classic() +
+  labs(x = "Species",
+       y = "Flipper length (mm)",
+       title = "Penguin flipper length by species")
 ```
 
