@@ -13,6 +13,7 @@ library(palmerpenguins)
 
 ```{r}
 ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) +
-  geom_jitter()
+  geom_jitter(aes(color = species)) +
+  theme_classic()
 ```
 
